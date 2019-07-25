@@ -1,8 +1,8 @@
 body {
     transition: background-color 0.8s;
-    color: black;
+    color: white;
     /* background: #2980b9; */
-    background:white;
+    background:#2fc97a;
     font-variant: small-caps;
     font-family: "Unica One", sans-serif;
   }
@@ -76,11 +76,9 @@ body {
     font-family: "Unica One", sans-serif;
     text-transform: uppercase;
     margin-right: 8px;
-    color: black;
-    font-weight:bolder;
+    color: white;
     background: none;
     border: none;
-    margin-top:-100px;
   }
   
   .incrementor {
@@ -99,7 +97,7 @@ body {
   .incrementor button {
     background: none;
     outline: none;
-    color: black;
+    color: white;
     border: none;
   }
   

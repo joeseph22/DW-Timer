@@ -85,12 +85,12 @@ function startTimer() {
     startTime = performance.now();
     duration = parseInt( durationElement.textContent ) * 1000 * 60;
     requestId = requestAnimationFrame(tick)    ;
-    document.body.style.backgroundColor = "#fff";
+    document.body.style.backgroundColor = "#2fc97a";
 }
 
 function stopTimer() {
     paused = undefined;
-    // timer.textContent = 'START';
+    timer.textContent = 'START';
     arc.style.strokeDashoffset = strokeLength;
     cancelAnimationFrame(requestId);
     document.body.classList.remove('paused');
