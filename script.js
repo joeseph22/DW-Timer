@@ -72,6 +72,7 @@ arc.style.strokeDasharray = strokeLength + ' ' + strokeLength;
 arc.style.strokeDashoffset = strokeLength;
 
 const timer = document.getElementById('timer');
+const pausedTimer = document.getElementById('paused');
 let startTime;
 let paused;
 let pauseTime;
@@ -90,16 +91,18 @@ function startTimer() {
 
 function stopTimer() {
     paused = undefined;
-    // timer.textContent = 'START';
+    timer.textContent = 'START';
     arc.style.strokeDashoffset = strokeLength;
     cancelAnimationFrame(requestId);
     document.body.classList.remove('paused');
+    pausedTimer.textContent = '';
 }
 
 function pauseTimer() {
     paused = true;
     pauseTime = performance.now();
     cancelAnimationFrame(requestId);
+    pausedTimer.textContent = 'Paused';
     document.body.classList.add('paused');
 }
 
@@ -108,6 +111,7 @@ function resumeTimer() {
     startTime = performance.now() - (pauseTime - startTime);
     requestId = requestAnimationFrame(tick);
     document.body.classList.remove('paused');
+    pausedTimer.textContent = '';
 }
 
 function tick ( currentTime ) {
