@@ -385,3 +385,15 @@ body {
 
 .btn-grad {background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)}
 .btn-grad:hover { background-position: right center; }
+.startBtn {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.startBtn > button {
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 20%;
+}
+#start20 {
+}

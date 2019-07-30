@@ -80,11 +80,15 @@ let duration;
 let durationElement = document.getElementById('work-length');
 let requestId;
 
-function startTimer() {
+function startTimer( manualTime = 0 ) {
     paused = false;
 
     startTime = performance.now();
-    duration = parseInt( durationElement.textContent ) * 1000 * 60;
+    if ( manualTime === 0)
+        duration = parseInt( durationElement.textContent ) * 1000 * 60;
+    else {
+        duration = manualTime * 1000 * 60;
+    }
     requestId = requestAnimationFrame(tick)    ;
     document.body.style.backgroundColor = "#fff";
 }
@@ -190,3 +194,17 @@ forEach.call(incrementors, incrementor => {
 });
 
 document.getElementById('stop').addEventListener('click', stopTimer);
+
+const start20 = document.querySelector('#start20');
+const start40 = document.querySelector('#start40');
+const start60 = document.querySelector('#start60');
+
+start20.addEventListener('click', event => {
+    startTimer(20);
+})
+start40.addEventListener('click', event => {
+    startTimer(40);
+})
+start60.addEventListener('click', event => {
+    startTimer(60);
+})
