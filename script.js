@@ -160,7 +160,7 @@ function toggleMode() {
 
 function doneMode() {
     stopTimer();
-    document.body.style.backgroundColor = "#850a49";
+    document.body.style.backgroundColor = "#FFC0CB";
 }
 ////
 //   Input
