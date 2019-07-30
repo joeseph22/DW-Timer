@@ -388,12 +388,14 @@ body {
 .startBtn {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: -10px;
 }
 .startBtn > button {
     padding: 20px;
     font-weight: bold;
     border-radius: 20%;
 }
-#start20 {
+.oneToHund {
+    padding: 5%;
 }

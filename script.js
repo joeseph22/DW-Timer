@@ -81,11 +81,12 @@ let durationElement = document.getElementById('work-length');
 let requestId;
 
 function startTimer( manualTime = 0 ) {
+    console.log(document.getElementById("work-length").value)
     paused = false;
-
     startTime = performance.now();
     if ( manualTime === 0)
-        duration = parseInt( durationElement.textContent ) * 1000 * 60;
+        //duration = parseInt( durationElement.textContent ) * 1000 * 60;
+        duration = parseInt( document.getElementById("work-length").value ) * 1000 * 60;
     else {
         duration = manualTime * 1000 * 60;
     }
@@ -181,6 +182,7 @@ svg.addEventListener('click', event => {
 
 });
 
+/*
 const incrementors = document.querySelectorAll('.incrementor');
 
 forEach.call(incrementors, incrementor => {
@@ -192,6 +194,7 @@ forEach.call(incrementors, incrementor => {
     value.textContent = Math.max(1, parseInt(value.textContent) - 1);
   });
 });
+*/
 
 document.getElementById('stop').addEventListener('click', stopTimer);
 
@@ -208,3 +211,16 @@ start40.addEventListener('click', event => {
 start60.addEventListener('click', event => {
     startTimer(60);
 })
+
+//add dropdown option 1 - 100
+var addOptions = () => {
+    const oneToHund = document.querySelector('.oneToHund');
+    for (var i = 1; i <= 100; i++) {
+        var theOption = new Option;
+        theOption.text = i;
+        theOption.value = i;
+        oneToHund.options[i] = theOption;
+    }
+}
+window.onload=addOptions();
+
