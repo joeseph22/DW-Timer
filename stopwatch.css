@@ -4,8 +4,8 @@ body {
   justify-content: center;
 	height: 100vh;
 	width: 100vw;
-	background: $clouds;
-	font-family: $font;
+	background: clouds;
+	font-family: Lato;
 }
 
 div#wrapper {
@@ -29,14 +29,14 @@ h2 {
 
 p {
 	display: inline-block;
-	font-size: 6em;
+	font-size: 15em;
 	font-weight: 600;
 	font-feature-settings: "tnum" on;
 	font-variant-numeric: tabular-nums;
 	position: relative;
 }
 	p:after {
-		color: darken($clouds, 35%);
+		color: darken(clouds, 35%);
 		font-size: 0.18em;
 		font-weight: 600;
 		letter-spacing: 1px;
@@ -49,8 +49,8 @@ p {
 	
 
 span.divider {
-	color: darken($clouds, 35%);
-	font-size: 6em;
+	color: darken(clouds, 35%);
+	font-size: 15em;
 	font-weight: 400;
 	margin: 0 10px;
 }
@@ -67,8 +67,8 @@ span.divider {
 		cursor: pointer;
 		border: none;
 		border-radius: 100px;
-		font-family: $font;
-		font-size: 1.25em;
+		font-family: font;
+		font-size: 2.5em;
 		font-weight: 700;
 		letter-spacing: 1px;
 		padding: 12px 12px;
@@ -89,12 +89,12 @@ span.divider {
 		
 #start, #pause, #resume {
 			display: block;
-			background: $emerald;
+			background: emerald;
 			padding: 12px 0;
 			width: calc(100%);
 }
 			#start:hover, #pause:hover, #resume:hover {
-				background: darken($emerald, 2.5%);
+				background: darken(emerald, 2.5%);
 			}
 		
 		#pause, #resume {
@@ -108,15 +108,15 @@ span.divider {
 		}
 		
 		#reset {
-			background: $peter-river;
+			background: peter-river;
 }
 			#reset:hover {
-				background: darken($peter-river, 2.5%);
+				background: darken(peter-river, 2.5%);
 			}
 		
 		#stop {
-			background: $alizarin;
+			background: alizarin;
 }
 			#stop:hover {
-				background: darken($alizarin, 2.5%);
+				background: darken(alizarin, 2.5%);
 			}
