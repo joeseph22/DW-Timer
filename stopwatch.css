@@ -1,0 +1,122 @@
+body {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background: $clouds;
+	font-family: $font;
+}
+
+div#wrapper {
+	width: 80%;
+	max-width: 700px;
+	padding-top: 48px;
+	position: relative;
+}
+
+h2 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: 600;
+	font-feature-settings: "tnum" on;
+	font-variant-numeric: tabular-nums;
+}
+
+#stopwatch {
+	text-align: center;
+}
+
+p {
+	display: inline-block;
+	font-size: 6em;
+	font-weight: 600;
+	font-feature-settings: "tnum" on;
+	font-variant-numeric: tabular-nums;
+	position: relative;
+}
+	p:after {
+		color: darken($clouds, 35%);
+		font-size: 0.18em;
+		font-weight: 600;
+		letter-spacing: 1px;
+		position: absolute;
+		left: 50%;
+		@include transform(translate(-50%, 0));
+		text-transform: uppercase;
+		top: 100px;
+	}
+	
+
+span.divider {
+	color: darken($clouds, 35%);
+	font-size: 6em;
+	font-weight: 400;
+	margin: 0 10px;
+}
+
+#button-wrap {
+	margin: 80px auto 0;
+	max-width: 200px;
+	text-align: center;
+	width: 80%;
+}
+	button {
+        color: #FFCE00;
+        background: #007849;
+		cursor: pointer;
+		border: none;
+		border-radius: 100px;
+		font-family: $font;
+		font-size: 1.25em;
+		font-weight: 700;
+		letter-spacing: 1px;
+		padding: 12px 12px;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+		@include transition(background 0.3s ease);
+    }
+		button:active {
+			top: 3px;
+		}
+		
+		i {
+			margin-right: 8px;
+		}
+		
+		.no-text i {
+			margin-right: 0;
+		}
+		
+#start, #pause, #resume {
+			display: block;
+			background: $emerald;
+			padding: 12px 0;
+			width: calc(100%);
+}
+			#start:hover, #pause:hover, #resume:hover {
+				background: darken($emerald, 2.5%);
+			}
+		
+		#pause, #resume {
+			padding: 12px 32px;
+		}
+		
+		#reset, #stop {
+			margin: 20px 6px 0 6px;
+			opacity: 0;
+			@include transition(opacity 0.5s ease);
+		}
+		
+		#reset {
+			background: $peter-river;
+}
+			#reset:hover {
+				background: darken($peter-river, 2.5%);
+			}
+		
+		#stop {
+			background: $alizarin;
+}
+			#stop:hover {
+				background: darken($alizarin, 2.5%);
+			}

@@ -1,6 +1,6 @@
 body {
     transition: background-color 0.8s;
-    color: black;
+    color: #262228;
     /* background: #2980b9; */
     background:white;
     font-variant: small-caps;
@@ -26,7 +26,7 @@ body {
     left: 290px;
   }
   
-  svg {
+svg {
     display: block;
     cursor: pointer;
     max-width: 400px;
@@ -109,293 +109,87 @@ body {
   
   #work-length {
       margin: 0px 20px;
+      padding: 0.8%;
   }
 
 
   /* Custom button */
-  .mui-btn {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: rgba(0,0,0,.87);
-    background-color: #FFF;
-    transition: all .2s ease-in-out;
-    display: inline-block;
-    height: 36px;
-    padding: 0 26px;
-    margin-top: 0px;
-    margin-bottom: 6px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    touch-action: manipulation;
-    background-image: none;
-    text-align: center;
-    line-height: 36px;
-    vertical-align: middle;
-    white-space: nowrap;
-    user-select: none;
-    font-size: 14px;
-    letter-spacing: .03em;
-    position: relative;
-    overflow: hidden;
-}
-
-.mui-btn:active,.mui-btn:focus,.mui-btn:hover {
-    color: rgba(0,0,0,.87);
-    background-color: #fff
-}
-
-.mui-btn[disabled]:active,.mui-btn[disabled]:focus,.mui-btn[disabled]:hover {
-    color: rgba(0,0,0,.87);
-    background-color: #FFF
-}
-
-.mui-btn.mui-btn--flat {
-    color: rgba(0,0,0,.87);
-    background-color: transparent
-}
-
-.mui-btn.mui-btn--flat:active,.mui-btn.mui-btn--flat:focus,.mui-btn.mui-btn--flat:hover {
-    color: rgba(0,0,0,.87);
-    background-color: #f2f2f2
-}
-
-.mui-btn.mui-btn--flat[disabled]:active,.mui-btn.mui-btn--flat[disabled]:focus,.mui-btn.mui-btn--flat[disabled]:hover {
-    color: rgba(0,0,0,.87);
-    background-color: transparent
-}
-
-.mui-btn:active,.mui-btn:focus,.mui-btn:hover {
-    outline: 0;
-    text-decoration: none;
-    color: rgba(0,0,0,.87)
-}
-
-.mui-btn:focus,.mui-btn:hover {
-    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2)
-}
-
-.mui-btn:active {
-    box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23)
-}
-
-.mui-btn.mui--is-disabled,.mui-btn:disabled {
-    cursor: not-allowed;
-    pointer-events: none;
-    opacity: .6;
-    box-shadow: none
-}
-
-.mui-btn+.mui-btn {
-    margin-left: 8px
-}
-
-.mui-btn--flat {
-    background-color: transparent
-}
-
-.mui-btn--flat:active,.mui-btn--flat:focus,.mui-btn--flat:hover {
-    box-shadow: none;
-    background-color: #f2f2f2
-}
-
-.mui-btn--fab,.mui-btn--raised {
-    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2)
-}
-
-.mui-btn--fab:active,.mui-btn--raised:active {
-    box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23)
-}
-
-.mui-btn--fab {
-    position: relative;
-    padding: 0;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    border-radius: 50%;
-    z-index: 1
-}
-
-.mui-btn--primary {
-    color: #FFF;
-    background-color: #2196F3
-}
-
-.mui-btn--primary:active,.mui-btn--primary:focus,.mui-btn--primary:hover {
-    color: #FFF;
-    background-color: #39a1f4
-}
-
-.mui-btn--primary[disabled]:active,.mui-btn--primary[disabled]:focus,.mui-btn--primary[disabled]:hover {
-    color: #FFF;
-    background-color: #2196F3
-}
-
-.mui-btn--primary.mui-btn--flat {
-    color: #2196F3;
-    background-color: transparent
-}
-
-.mui-btn--primary.mui-btn--flat:active,.mui-btn--primary.mui-btn--flat:focus,.mui-btn--primary.mui-btn--flat:hover {
-    color: #2196F3;
-    background-color: #f2f2f2
-}
-
-.mui-btn--primary.mui-btn--flat[disabled]:active,.mui-btn--primary.mui-btn--flat[disabled]:focus,.mui-btn--primary.mui-btn--flat[disabled]:hover {
-    color: #2196F3;
-    background-color: transparent
-}
-
-.mui-btn--dark {
-    color: #FFF;
-    background-color: #424242
-}
-
-.mui-btn--dark:active,.mui-btn--dark:focus,.mui-btn--dark:hover {
-    color: #FFF;
-    background-color: #4f4f4f
-}
-
-.mui-btn--dark[disabled]:active,.mui-btn--dark[disabled]:focus,.mui-btn--dark[disabled]:hover {
-    color: #FFF;
-    background-color: #424242
-}
-
-.mui-btn--dark.mui-btn--flat {
-    color: #424242;
-    background-color: transparent
-}
-
-.mui-btn--dark.mui-btn--flat:active,.mui-btn--dark.mui-btn--flat:focus,.mui-btn--dark.mui-btn--flat:hover {
-    color: #424242;
-    background-color: #f2f2f2
-}
-
-.mui-btn--dark.mui-btn--flat[disabled]:active,.mui-btn--dark.mui-btn--flat[disabled]:focus,.mui-btn--dark.mui-btn--flat[disabled]:hover {
-    color: #424242;
-    background-color: transparent
-}
-
-.mui-btn--danger {
-    color: #FFF;
-    background-color: #F44336
-}
-
-.mui-btn--danger:active,.mui-btn--danger:focus,.mui-btn--danger:hover {
-    color: #FFF;
-    background-color: #f55a4e
-}
-
-.mui-btn--danger[disabled]:active,.mui-btn--danger[disabled]:focus,.mui-btn--danger[disabled]:hover {
-    color: #FFF;
-    background-color: #F44336
-}
-
-.mui-btn--danger.mui-btn--flat {
-    color: #F44336;
-    background-color: transparent
-}
-
-.mui-btn--danger.mui-btn--flat:active,.mui-btn--danger.mui-btn--flat:focus,.mui-btn--danger.mui-btn--flat:hover {
-    color: #F44336;
-    background-color: #f2f2f2
-}
-
-.mui-btn--danger.mui-btn--flat[disabled]:active,.mui-btn--danger.mui-btn--flat[disabled]:focus,.mui-btn--danger.mui-btn--flat[disabled]:hover {
-    color: #F44336;
-    background-color: transparent
-}
-
-.mui-btn--accent {
-    color: #FFF;
-    background-color: #FF4081
-}
-
-.mui-btn--accent:active,.mui-btn--accent:focus,.mui-btn--accent:hover {
-    color: #FFF;
-    background-color: #ff5a92
-}
-
-.mui-btn--accent[disabled]:active,.mui-btn--accent[disabled]:focus,.mui-btn--accent[disabled]:hover {
-    color: #FFF;
-    background-color: #FF4081
-}
-
-.mui-btn--accent.mui-btn--flat {
-    color: #FF4081;
-    background-color: transparent
-}
-
-.mui-btn--accent.mui-btn--flat:active,.mui-btn--accent.mui-btn--flat:focus,.mui-btn--accent.mui-btn--flat:hover {
-    color: #FF4081;
-    background-color: #f2f2f2
-}
-
-.mui-btn--accent.mui-btn--flat[disabled]:active,.mui-btn--accent.mui-btn--flat[disabled]:focus,.mui-btn--accent.mui-btn--flat[disabled]:hover {
-    color: #FF4081;
-    background-color: transparent
-}
-
-.mui-btn--small {
-    height: 30.6px;
-    line-height: 30.6px;
-    padding: 0 16px;
-    font-size: 13px
-}
-
-.mui-btn--large {
-    height: 54px;
-    line-height: 54px;
-    padding: 0 26px;
-    font-size: 14px
-}
-
-.mui-btn--fab.mui-btn--small {
-    width: 44px;
-    height: 44px;
-    line-height: 44px
-}
-
-.mui-btn--fab.mui-btn--large {
-    width: 75px;
-    height: 75px;
-    line-height: 75px
-}
-  /* End Custom button */
-  
-  
-.grid-container {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-gap: 10px;
-	padding: 10px;
-}
-
-.grid-container > div {
-	text-align: center;
-	padding: 20px 0;
-	font-size: 30px;
-}
-.set-time {
-	grid-column: 1 / span 2;
-}
-
-.btn-grad {background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)}
-.btn-grad:hover { background-position: right center; }
-.startBtn {
+.startBtn{
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
-    margin-top: -10px;
+    justify-content: center;
 }
-.startBtn > button {
-    padding: 20px;
-    font-weight: bold;
-    border-radius: 20%;
+.btn {
+  background: #007849;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  color: #FFCE00;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px;
+  padding: 12px 35px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-.oneToHund {
-    padding: 5%;
+.btn-link {
+    background: transparent;
+    box-shadow: none;
+    color: #222;
+}
+.circle {
+      fill: rgba(0, 0, 0, 0.08);
+    }
+
+    .btn:hover,
+    .btn:active {
+      background: transparent;
+    }
+
+    .btn:focus, .btn:before {
+        background: #FFCE00;
+        color: #007849;
+              font-weight: bolder;
+
+      }
+  
+  .btn:focus{
+    outline: none;
+}
+    .btn:before {
+      transition: all 0.7s ease;
+      content: "";
+      position: absolute;
+      background: #FFCE00 !important;
+      z-index: 99;
+      left: 15%;
+      right: 15%;
+      top: -50%;
+      bottom: -50%;
+      border-radius: 200%;
+      -webkit-animation: pulse ease 1.4s infinite;
+    }
+  
+  .btn:active,
+  .btn:hover {
+        background: #FFCE00;
+        color: #007849;
+      font-weight: bolder;
+}
+    .btn:before {
+      opacity: 0;
+      left: -10%;
+      right: -10%;
+}
+
+.eff {
+  position: relative;
+  overflow: hidden;
+}
+
+@-webkit-keyframes pulse {
+  from {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  to {transform: scale(1);}
 }
